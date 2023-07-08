@@ -1,0 +1,35 @@
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Import Test</title>
+</head>
+<body>
+   <p id="messageShow"></p> 
+   <button type="button" onclick="ShowMessage()">Show</button>
+</body>
+<!---<script type="module">
+    import message from "./message.js";
+let pcont=document.getElementById('messageShow');
+    function ShowMessage() {
+if(pcont.innerHTML ===''){
+pcont.innerHTML=message('Your Club Data Will show Here');
+}else{
+    pcont.innerHTML='';
+}
+    }
+</script> ---->
+<script type="module">
+    import message from "./Js/message.js";
+    let pcont=document.getElementById('messageShow');
+    let ShowMessage=()=>{
+        if(pcont.innerHTML ===''){
+            pcont.innerHTML=message('Your Club Data Will show Here');
+            }else{
+                pcont.innerHTML='';
+            } 
+    }
+</script>
+
+</html>

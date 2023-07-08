@@ -1,0 +1,30 @@
+.red{
+    border: solid gray 2px;
+    font-size: medium;
+    background-color: red;
+    color: white;
+}
+.green{
+    border: solid palevioletred 2px;
+    font-size: medium;
+    background-color: green;
+    color: white;
+}
+.yellow{
+    border: solid goldenrod 2px;
+    font-size: medium;
+    background-color: yellow;
+    color: white;
+}
+.pink{
+    border: solid yellowgreen 2px;
+    font-size: medium;
+    background-color: pink;
+    color: white;
+
+}
+#pstyle{
+    color: greenyellow;
+    font-size:medium ;
+    background-color: brown;
+}
