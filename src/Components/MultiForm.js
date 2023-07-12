@@ -38,7 +38,7 @@ export default function  MultiForm(){
                 <select value={selectarae} onChange={(e)=>setSelect(e.target.value)}>
                     <option value="Chiswock">Chiswick</option>
                     <option value="Samoa">Samoa</option>
-                    <option value="Welogghhd">Welignton</option>
+                    <option value="Welignton">Welignton</option>
                 </select>
                 <input type="text" className="form-control"/>
                 <button type="submit">Save Data</button>
