@@ -21,7 +21,18 @@ import CounterTest from './pages/CounterTest';
 import HooksTest from './pages/hooks/HooksTest';
 import HooksTest1 from './pages/hooks/hooksTest1';
 
+//useEffect Hooks
+import UseEffect1 from './pages/hooks/UseEffectHooks/UseEffect1';
+import UseEffect2 from './pages/hooks/UseEffectHooks/UseEffect2';
+import UseEffect3 from './pages/hooks/UseEffectHooks/UseEffect3';
+
+//useRef Hooks
+import TrackCount1 from './pages/hooks/UseRefHooks/TrackCount1';
+import FocusChange from './pages/hooks/UseRefHooks/FocusChange';
  import { BrowserRouter as Router , Routes, Route, Link } from "react-router-dom";
+import WithoutCustHooks from './pages/hooks/CustomHooks/WithoutCustHooks';
+import WithCustHooks from './pages/hooks/CustomHooks/WithCustHooks';
+
 function App() {
   return (
     // <div className="App">
@@ -53,6 +64,31 @@ function App() {
     <Link to={'counterTest'} className='linkmarging'>Counter Test</Link>      
     </div>
   </div> 
+  <div className='dropdown'>
+    <button className='dropbtn'>Use Effect</button>
+    <div className='dropdown-content'>
+      <Link to={'useEffect1'} className='linemarging'>Continous Counter</Link>
+      <Link to={'useEffect2'} className='linemarging'>Only One Time</Link>
+      <Link to={'useEffect3'} className='linemarging'>Counter Changes</Link>
+    </div>
+  </div>
+
+  <div className='dropdown'>
+    <button className='dropbtn'>Use Ref</button>
+    <div className='dropdown-content'>
+      <Link to={'useRef1'} className='linemarging'>Use Ref1</Link>
+      <Link to={'useRef2'} className='linemarging'>Use Ref2</Link>
+      
+    </div>
+  </div>
+  <div className='dropdown'>
+    <button className='dropbtn'>Custom Hooks</button>
+    <div className='dropdown-content'>
+      <Link to={'customHooks'} className='linemarging'>WIthou Hooks</Link>
+      <Link to={'customHooks1'} className='linemarging'>With Hooks</Link>
+      
+    </div>
+  </div>
       </div> 
         <Routes>
         <Route  path='/' element={<HomePage/>}/>
@@ -65,6 +101,13 @@ function App() {
       <Route path='counterTest' element={<CounterTest/>}/>
       <Route path='hookstest' element={<HooksTest/>}/>
       <Route path='hookstest1' element={<HooksTest1/>}/>
+      <Route path='useEffect1' element={<UseEffect1/>}/>
+      <Route path='useEffect2' element={<UseEffect2/>}/>
+      <Route path='useEffect3' element={<UseEffect3/>}/>
+      <Route path='useRef1' element={<TrackCount1/>}/>
+      <Route path='useRef2' element={<FocusChange/>}/>
+      <Route path='customHooks' element={<WithoutCustHooks/>}/>
+      <Route path='customHooks1' element={<WithCustHooks/>}/>
         </Routes>
         
     </Router>
