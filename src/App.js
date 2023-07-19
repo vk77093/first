@@ -33,6 +33,15 @@ import FocusChange from './pages/hooks/UseRefHooks/FocusChange';
 import WithoutCustHooks from './pages/hooks/CustomHooks/WithoutCustHooks';
 import WithCustHooks from './pages/hooks/CustomHooks/WithCustHooks';
 
+
+//Offical Docs 
+import MyButton from './Components/OfficalDocs/MyButton';
+import UserAvatar from './Components/OfficalDocs/UserAvatar';
+import './CSS/reactdoc.css';
+import ListComp from './Components/OfficalDocs/ListComp';
+import ShowEventPage from './Components/OfficalDocs/ShowEventPage';
+
+import MainTicToc from './Components/OfficalDocs/TicTocGame/MainTicToc';
 function App() {
   return (
     // <div className="App">
@@ -88,6 +97,17 @@ function App() {
       <Link to={'customHooks1'} className='linemarging'>With Hooks</Link>
       
     </div>
+    
+  </div>
+  <div className='dropdown'>
+    <button className='dropbtn'>Offical Docs</button>
+    <div className='dropdown-content'>
+      <Link to={'mybutton'}>MyButton</Link>
+      <Link to={'useravatar'}>UserAvatar</Link>
+      <Link to={'listcomp'}>List Component</Link>
+      <Link to={'showevent'}>Show Event</Link>
+      <Link to={'tictoc'}>TicTocGame</Link>
+    </div>
   </div>
       </div> 
         <Routes>
@@ -108,6 +128,11 @@ function App() {
       <Route path='useRef2' element={<FocusChange/>}/>
       <Route path='customHooks' element={<WithoutCustHooks/>}/>
       <Route path='customHooks1' element={<WithCustHooks/>}/>
+      <Route path='mybutton' element={<MyButton/>}/>
+      <Route path='useravatar' element={<UserAvatar/>}/>
+      <Route path='listcomp' element={<ListComp/>}/>
+      <Route path='showevent' element={<ShowEventPage/>}/>
+      <Route path='tictoc' element={<MainTicToc/>}/>
         </Routes>
         
     </Router>
