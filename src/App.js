@@ -42,6 +42,8 @@ import ListComp from './Components/OfficalDocs/ListComp';
 import ShowEventPage from './Components/OfficalDocs/ShowEventPage';
 
 import MainTicToc from './Components/OfficalDocs/TicTocGame/MainTicToc';
+import TableList from './Components/OfficalDocs/ThinkinInReact/TableList';
+import ShowGallery from './Components/OfficalDocs/UIRender/First/ShowGallery';
 function App() {
   return (
     // <div className="App">
@@ -107,6 +109,13 @@ function App() {
       <Link to={'listcomp'}>List Component</Link>
       <Link to={'showevent'}>Show Event</Link>
       <Link to={'tictoc'}>TicTocGame</Link>
+      <Link to={'reactThink'}>Table List</Link>
+    </div>
+  </div>
+  <div className='dropdown'>
+    <button className='dropbtn'>OfficalDocs 2</button>
+    <div className='dropdown-content'>
+      <Link to={'showGallery'}>Show Gallery</Link>
     </div>
   </div>
       </div> 
@@ -133,6 +142,8 @@ function App() {
       <Route path='listcomp' element={<ListComp/>}/>
       <Route path='showevent' element={<ShowEventPage/>}/>
       <Route path='tictoc' element={<MainTicToc/>}/>
+      <Route path='reactThink' element={<TableList/>}/>
+      <Route path='showGallery' element={<ShowGallery/>}/>
         </Routes>
         
     </Router>
