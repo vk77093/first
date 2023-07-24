@@ -1,4 +1,4 @@
-import logo from './logo.svg';
+// import logo from './logo.svg';
 import './App.css';
 import './CSS/nav.css';
  import ColorChanges from './pages/ColorChanges.js';
@@ -44,6 +44,10 @@ import ShowEventPage from './Components/OfficalDocs/ShowEventPage';
 import MainTicToc from './Components/OfficalDocs/TicTocGame/MainTicToc';
 import TableList from './Components/OfficalDocs/ThinkinInReact/TableList';
 import ShowGallery from './Components/OfficalDocs/UIRender/First/ShowGallery';
+import RenderJSX from './Components/OfficalDocs/UIRender/JSX/RenderJSX';
+import List1 from './Components/OfficalDocs/UIRender/ListRender/List1';
+import EventShow from './Components/OfficalDocs/Intractive/Events/Event1';
+import ShowStateObject from './Components/OfficalDocs/Intractive/ObjectState/ShowStateObject';
 function App() {
   return (
     // <div className="App">
@@ -116,7 +120,15 @@ function App() {
     <button className='dropbtn'>OfficalDocs 2</button>
     <div className='dropdown-content'>
       <Link to={'showGallery'}>Show Gallery</Link>
+      <Link to={'renderJSX'}>Render JSX</Link>
+      <Link to={'listshow'}>List Show</Link>
+      <button className='dropbtn2'>Intractive</button>
+    <div className='dropdown-content2'>
+      <Link to={'eventshow'}>Event Show</Link>
+      <Link to={'stateObject'}>State Object</Link>
     </div>
+    </div>
+    
   </div>
       </div> 
         <Routes>
@@ -144,6 +156,10 @@ function App() {
       <Route path='tictoc' element={<MainTicToc/>}/>
       <Route path='reactThink' element={<TableList/>}/>
       <Route path='showGallery' element={<ShowGallery/>}/>
+      <Route path='renderJSX' element={<RenderJSX/>}/>
+      <Route path='listshow' element={<List1/>}/>
+      <Route path='eventshow' element={<EventShow/>}/>
+      <Route path='stateObject' element={<ShowStateObject/>}/>
         </Routes>
         
     </Router>
