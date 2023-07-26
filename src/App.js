@@ -48,6 +48,7 @@ import RenderJSX from './Components/OfficalDocs/UIRender/JSX/RenderJSX';
 import List1 from './Components/OfficalDocs/UIRender/ListRender/List1';
 import EventShow from './Components/OfficalDocs/Intractive/Events/Event1';
 import ShowStateObject from './Components/OfficalDocs/Intractive/ObjectState/ShowStateObject';
+import ShowArray from './Components/OfficalDocs/Intractive/Arrays/ShowArray';
 function App() {
   return (
     // <div className="App">
@@ -57,7 +58,7 @@ function App() {
     <>
     
     <Router>
-    <div class="navbar">
+    <div className="navbar">
        <Link to={"/"} className="navbar-brand text-white linkmarging">
          Main App
         </Link>
@@ -69,11 +70,11 @@ function App() {
 
         <Link to={"testing"} className='navbar linkmarging'>Testing React</Link>
         
-        <div class="dropdown">
-    <button class="dropbtn">Use State
-      <i class="fa fa-caret-down"></i>
+        <div className="dropdown">
+    <button className="dropbtn">Use State
+      <i className="fa fa-caret-down"></i>
     </button>
-    <div class="dropdown-content">
+    <div className="dropdown-content">
     <Link to={'hookstest'} className='linkmarging'>State 1</Link>
     <Link to={'hookstest1'} className='linkmarging'>State 2</Link>
     <Link to={'counterTest'} className='linkmarging'>Counter Test</Link>      
@@ -126,6 +127,7 @@ function App() {
     <div className='dropdown-content2'>
       <Link to={'eventshow'}>Event Show</Link>
       <Link to={'stateObject'}>State Object</Link>
+      <Link to={'arrayshow'}>Array Show</Link>
     </div>
     </div>
     
@@ -160,6 +162,7 @@ function App() {
       <Route path='listshow' element={<List1/>}/>
       <Route path='eventshow' element={<EventShow/>}/>
       <Route path='stateObject' element={<ShowStateObject/>}/>
+      <Route path='arrayshow' element={<ShowArray/>}/>
         </Routes>
         
     </Router>
