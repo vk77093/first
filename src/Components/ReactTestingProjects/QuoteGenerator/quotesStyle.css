@@ -1,0 +1,23 @@
+.container-quote {
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  background-color: goldenrod;
+}
+
+main.quote {
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+section.quote {
+  margin-top: 100px;
+  display: grid;
+  place-items: center;
+  border: 2px solid gray;
+  padding: 20px 10px;
+  background-color: white;
+}
+
+h1.quote{
+  font-size: 2rem;
+}

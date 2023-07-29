@@ -22,6 +22,7 @@ export function SelectedItemEditable2(){
                         return{
                             ...it,
                             title:e.target.value,
+                            
                         }
                             
                         

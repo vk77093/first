@@ -1,10 +1,10 @@
 
-.navbar {
+.navbarcss {
     overflow: hidden;
     background-color: #333;
   }
   
-  .navbar a {
+  .navbarcss a {
     float: left;
     font-size: 16px;
     color: white;
@@ -13,12 +13,12 @@
     text-decoration: none;
   }
   
-  .dropdown {
+  .dropdowncss {
     float: left;
     overflow: hidden;
   }
   
-  .dropdown .dropbtn {
+  .dropdowncss .dropbtncss {
     font-size: 16px;  
     border: none;
     outline: none;
@@ -29,12 +29,12 @@
     margin: 0;
   }
   
-  .navbar a:hover, .dropdown:hover .dropbtn {
+  .navbarcss a:hover, .dropdowncss:hover .dropbtncss {
     background-color: red;
     
   }
   
-  .dropdown-content {
+  .dropdowncss-content {
     display: none;
     position: absolute;
     background-color: #f9f9f9;
@@ -43,7 +43,7 @@
     z-index: 1;
   }
   
-  .dropdown-content a {
+  .dropdowncss-content a {
     float: none;
     color: black;
     padding: 12px 16px;
@@ -52,20 +52,20 @@
     text-align: left;
   }
   
-  .dropdown-content a:hover {
+  .dropdowncss-content a:hover {
     background-color: #ddd;
   }
   
-  .dropdown:hover .dropdown-content {
+  .dropdowncss:hover .dropdowncss-content {
     display: block;
   }
 
-  /* second Level Dropdown*/
-  .dropdown-content .dropbtn2:hover{
+  /* second Level dropdowncss*/
+  .dropdowncss-content .dropbtncss2:hover{
    background-color: burlywood;
   
   }
-  .dropdown-content .dropbtn2{
+  .dropdowncss-content .dropbtncss2{
     font-size: 16px;  
     border: none;
     outline: none;
@@ -75,7 +75,7 @@
     font-family: inherit;
     margin: 0;
   }
- .dropdown-content2 a{
+ .dropdowncss-content2 a{
   float: none;
   color: black;
   padding: 12px 16px;
