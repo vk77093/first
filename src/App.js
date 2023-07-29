@@ -54,6 +54,9 @@ import ShowStateShare from './Components/OfficalDocs/UIState/StateShare/ShowStat
 import ShowCarsoule from './Components/ReactTestingProjects/ImageCarsoule/ShowCarsoule';
 import AccordainDemo from './Components/ReactTestingProjects/Accordain/AccordainDemo';
 import Quote from './Components/ReactTestingProjects/QuoteGenerator/Quote';
+import Shopping from './Components/ReactTestingProjects/ShoppingList/Shopping';
+import GitHubUsers from './Components/ReactTestingProjects/FetchingData/GitHubUsers';
+import VideoPlay from './Components/ReactTestingProjects/VideoPlayer/VideoPlay';
 
 function App() {
   return (
@@ -151,6 +154,9 @@ function App() {
       <Link to={'projects/imagecarsoule'}>Image Carsoules</Link>
       <Link to={'projects/accordain'}>AccordainDemo</Link>
       <Link to={'projects/quote'}>quotes</Link>
+      <Link to={'projects/shoppinglist'}>ShoppingList</Link>
+      <Link to={'projects/githupusers'}>GitHub Users</Link>
+      <Link to={'projects/videoplayer'}>VideoPlayer</Link>
     </div>
   </div>
       </div> 
@@ -189,6 +195,9 @@ function App() {
       <Route path='projects/imagecarsoule' element={<ShowCarsoule/>}/>
       <Route path='projects/accordain' element={<AccordainDemo/>}/>
       <Route path='projects/quote' element={<Quote/>}/>
+      <Route path='projects/shoppinglist' element={<Shopping/>}/>
+      <Route path='projects/githupusers' element={<GitHubUsers/>}/>
+      <Route path='projects/videoplayer' element={<VideoPlay/>}/>
         </Routes>
         
     </Router>
