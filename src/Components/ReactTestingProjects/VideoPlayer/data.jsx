@@ -1,4 +1,4 @@
-export const videodata={
+export const videos={
     deer:
       "https://s3.amazonaws.com/codecademy-content/courses/React/react_video-fast.mp4",
     snail:
